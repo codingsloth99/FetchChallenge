@@ -1,0 +1,64 @@
+[versions]
+agp = "8.5.1"
+kotlin = "1.9.0"
+coreKtx = "1.13.1"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+lifecycleRuntimeKtx = "2.8.3"
+activityCompose = "1.9.0"
+composeBom = "2024.04.01"
+
+[libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+androidx-ui = { group = "androidx.compose.ui", name = "ui" }
+androidx-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+androidx-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
+retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version = "2.9.0" }
+square-up = { group = "com.squareup", name = "javapoet", version = "1.13.0" }
+retrofit-converter-gson = { group = "com.squareup.retrofit2", name = "converter-gson", version = "2.9.0" }
+okhttp-logging-interceptor = { group = "com.squareup.okhttp3", name = "logging-interceptor", version = "4.9.0" }
+fresco-core = { group = "com.facebook.fresco", name = "fresco", version = "2.6.0" }
+fresco-landscape = { group = "com.github.skydoves", name = "landscapist-fresco", version = "2.4.1" }
+landscape-placeholder = { group = "com.github.skydoves", name = "landscapist-placeholder", version = "2.4.1" }
+landscape-glide = { group = "com.github.skydoves", name = "landscapist-glide", version = "2.4.1" }
+fresco-okhttp = { group = "com.facebook.fresco", name = "imagepipeline-okhttp3", version = "2.6.0" }
+paging-runtime = { group = "androidx.paging", name = "paging-runtime", version = "3.3.2" }
+paging-compose = { group = "androidx.paging", name = "paging-compose", version = "3.3.2" }
+compose-runtime = { group = "androidx.compose.runtime", name = "runtime",  version = "1.5.3"}
+androidx-foundation = { group = "androidx.compose.foundation", name = "foundation",  version = "1.5.0"}
+coil-compose = { group = "io.coil-kt", name = "coil-compose", version = "2.7.0" }
+navigation-compose = { group = "androidx.navigation", name = "navigation-compose", version = "2.8.3"}
+kotlinx-serialization-json = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version = "1.6.3"}
+
+hilt = { group = 'com.google.dagger', name = 'hilt-android', version = '2.48'}
+androidx-hilt = { group = 'androidx.hilt', name = 'hilt-navigation-compose', version = '1.2.0'}
+hilt-android-compiler = { group = 'com.google.dagger', name = 'hilt-compiler', version = '2.48' }
+
+androidx-room-runtime = { group = 'androidx.room', name = "room-runtime", version = "2.6.1"}
+androidx-room-compiler = { group = 'androidx.room', name = 'room-compiler', version = "2.6.1"}
+androidx-room-ktx = { group = 'androidx.room', name = 'room-ktx', version = "2.6.1"}
+androidx-room-paging = { group = 'androidx.room', name = 'room-paging', version = "2.6.1"}
+
+kotlinx-coroutines-test = { group = 'org.jetbrains.kotlinx', name = 'kotlinx-coroutines-test', version = "1.9.0"}
+androidx-arch-core = { group = 'androidx.arch.core', name = 'core-testing', version = "2.1.0"}
+reactivex-rxjava = { group = 'io.reactivex.rxjava2', name = 'rxjava', version = "2.2.21"}
+reactivex-android = { group = 'io.reactivex.rxjava2', name = 'rxandroid', version = "2.1.1"}
+
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+ksp = { id = "com.google.devtools.ksp", version = "2.0.0-1.0.23" }
+dagger-hilt = { id = "com.google.dagger.hilt.android", version = "2.48" }
+kotlinx-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version = "1.9.0"}
